@@ -1,0 +1,8 @@
+__pycache__/
+*.py[cod]
+.venv/
+.env
+cluster_haptic_texture_dataset/
+cluster_H4C_8k_cache/
+*.pt
+*.pth
