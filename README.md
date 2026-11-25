@@ -7,3 +7,13 @@ The model uses 160 ms of measured three-axis vibration history together with sca
 ## Release status
 
 This initial revision documents the project. Training and evaluation scripts, environment specifications, and model weights have yet to be added.
+
+## Verified artifact paths
+
+Paths below are relative to the experiment project root. Run the original scripts from that directory when reproducing these paths.
+
+- `build_cluster_H1_leakage_safe_manifest.py` writes `cluster_H1_results/H1_protocol_A_manifest.csv`, the manifest read by the 8 kHz cache builder. The original manifest builder contains a machine-specific output path.
+- `build_cluster_swin_multistage_features.py` writes `cluster_visual_features/swin_t_multistage_cropmean_features.npz`.
+- `run_FINAL_TEST_visual.py` reads the evaluation-window index at `cluster_FINAL_TEST_results/final_test_eval_index.csv` and loads `cluster_I8_gated_visual_residual_results/logmag/lambda_0.01/seed_42_full/best_frequency.pt`.
+
+The evaluation-index generation step is still being traced. The paths document the verified experiment layout; the artifacts themselves are not included in this revision.
