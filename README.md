@@ -16,4 +16,4 @@ Paths below are relative to the experiment project root. Run the original script
 - `build_cluster_swin_multistage_features.py` writes `cluster_visual_features/swin_t_multistage_cropmean_features.npz`.
 - `run_FINAL_TEST_visual.py` reads the evaluation-window index at `cluster_FINAL_TEST_results/final_test_eval_index.csv` and loads `cluster_I8_gated_visual_residual_results/logmag/lambda_0.01/seed_42_full/best_frequency.pt`.
 
-The evaluation-index generation step is still being traced. The paths document the verified experiment layout; the artifacts themselves are not included in this revision.
+The generator `build_final_test_index.py` writes the final evaluation index. The experiment copy has 28,320 data rows and includes window boundaries, source/cache paths, and a window-key hash. The paths document the verified experiment layout; the artifacts themselves are not included in this revision.
