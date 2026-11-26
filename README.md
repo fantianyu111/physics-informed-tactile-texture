@@ -6,7 +6,7 @@ The model uses 160 ms of measured three-axis vibration history together with sca
 
 ## Release status
 
-This initial revision documents the project. Training and evaluation scripts, environment specifications, and model weights have yet to be added.
+This revision includes 11 Python source files covering preprocessing, training, and evaluation. Environment specifications and model weights are pending. End-to-end reproduction from a clean checkout has yet to be verified.
 
 ## Verified artifact paths
 
